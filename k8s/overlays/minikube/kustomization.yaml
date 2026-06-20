@@ -1,0 +1,13 @@
+resources:
+  - ../../base
+
+namespace: todo
+
+patchesStrategicMerge:
+  - patches/backend-env-patch.yaml
+  - patches/frontend-service-patch.yaml
+
+# For minikube you may want to force imagePullPolicy or set imagePullSecrets
+# images:
+#   - name: sisilanay/todo-backend
+#     newTag: latest

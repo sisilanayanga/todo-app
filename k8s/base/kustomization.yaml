@@ -1,0 +1,12 @@
+resources:
+  - backend-deployment.yaml
+  - backend-service.yaml
+  - frontend-deployment.yaml
+  - frontend-service.yaml
+
+# Optionally you can define images here to override tags in overlays
+images:
+  - name: sisilanay/todo-backend
+    newTag: latest
+  - name: sisilanay/todo-frontend
+    newTag: latest
