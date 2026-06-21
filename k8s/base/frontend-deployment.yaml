@@ -12,6 +12,8 @@ spec:
       labels:
         app: todo-frontend
     spec:
+      imagePullSecrets:
+        - name: dockerhub-secret
       containers:
         - name: frontend
           image: sisilanay/todo-frontend:latest

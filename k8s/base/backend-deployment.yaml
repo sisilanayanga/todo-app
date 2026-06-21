@@ -12,6 +12,8 @@ spec:
       labels:
         app: todo-backend
     spec:
+      imagePullSecrets:
+        - name: dockerhub-secret
       containers:
         - name: backend
           image: sisilanay/todo-backend:latest
