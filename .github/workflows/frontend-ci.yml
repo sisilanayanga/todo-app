@@ -3,6 +3,8 @@ name: Build and push frontend image
 on:
   push:
     branches: [main]
+    paths:
+      - "frontend/**"
 
 jobs:
   build-and-push:
