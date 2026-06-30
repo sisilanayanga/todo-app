@@ -18,9 +18,6 @@ RUN npm run build
 # Runtime stage
 FROM nginx:alpine
 
-# Copy nginx configuration
-COPY nginx.conf /etc/nginx/nginx.conf
-
 # Copy built application from builder stage
 COPY --from=builder /app/dist /usr/share/nginx/html
 
