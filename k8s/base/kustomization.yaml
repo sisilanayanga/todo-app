@@ -3,6 +3,7 @@ resources:
   - backend-service.yaml
   - frontend-deployment.yaml
   - frontend-service.yaml
+  - ingress.yaml
 
 # Optionally you can define images here to override tags in overlays
 images:
